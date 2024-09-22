@@ -21,6 +21,7 @@ const checkUserAuth =async (req, res, next) => {
       res.send({ status: "failed", message: "Unauthorized User" });
     }
 }
+console.log(token);
 
 if (!token) {
   res.send({ status: "failed", message: "Unauthorized User, No Token" });

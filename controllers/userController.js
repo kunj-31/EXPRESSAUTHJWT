@@ -149,7 +149,8 @@ class UserController {
         res.send({
           status: "success",
           message: "Password reset link send to your email",
-        "info":info});
+          info: info,
+        });
       } else {
         res.send({ status: "failed", message: "email doesn't exist" });
       }
